@@ -1,0 +1,248 @@
+@charset  "utf-8" ;
+/ * Tài liệu CSS * /
+/ * Tạo 1 số quy định chung cho trang web * /
+cơ thể {
+  font-family : Arial , Helvetica , sans-serif;
+  font-size : nhỏ;
+  màu nền :  # ccc ;
+  /*background:url(images/background.gif);*/
+}
+# trang web {
+  chiều rộng :  1040 px ;
+  margin : tự động; / * Canh giữa trang web * /
+  màu nền :  # fff ;
+  / * chiều cao: 800px; * /
+}
+/ * Khoảng cách giữa các html thẻ trong web bằng 0 * /
+* {
+  lề :  0 px ;
+  đệm :  0 px ;
+}
+
+/ * PHẦN ĐẦU TRANG WEB ============================================ ==== * /
+# đầu {
+  chiều rộng :  1000 px ;
+  margin : tự động;
+  chiều cao :  28 px ;
+  màu nền :  # f4f4f4 ;
+}
+# top_left {
+  float : trái; / * Thẻ div id = top_left nằm bên trái * /
+  lề :  4 px  0  0  20 px ; / * Thẻ chia cách lề trên 4 và trái 20 * /
+}
+# top_right {
+  float : phải; / * Thẻ div id = top_right nằm bên phải * /
+  lề :  5 px  20 px  0  0 px ; / * Thẻ chia cách lề trên 5 và phải 20 * /
+}
+một {
+  văn bản-trang trí : không có; / * Remove under all tags a in website * /
+}
+# top_right  ul {
+  list-style-type : none; / * Tạo ds không dấu * /
+}
+# top_right  ul  li {
+  float : trái; / * Các li là 1 hàng ngang * /
+  lề phải :  5 px ; / * Các cách nhau 5px * /
+  màu :  # 999 ; / * Thay đổi đường xám màu | * /
+}
+# top_right  ul  li  a {
+  màu :  # 999 ; / * Thay đổi chữ xám màu của thẻ a * /
+}
+# top_right  ul  li  a : hover {
+  màu :  # 00f ; / * Rê chuột vào thẻ a đổi màu xanh * /
+}
+
+/ * PHẦN ĐẦU CỦA TRANG WEB ================================== * /
+# tiêu đề {
+  chiều rộng :  1000 px ;
+  margin : tự động;
+  chiều cao :  130 px ;
+  / * border: 1px solid # 000; * /
+}
+# shopcart {
+  float : phải;
+  chiều rộng :  180 px ;
+  chiều cao :  67 px ;
+  / * border: 1px solid # 000; * /
+  chức vụ : thân nhân; / * div shopcart cố định * /
+}
+# shopcart  img {
+  chiều rộng :  180 px ;
+  margin-top :  13 px ;
+}
+# info_cart {
+  vị trí : tuyệt đối;
+  chỉ số z :  99 ; / * div info-cart is up * /
+  đầu :  0 px ; / * div info-cart is up to the top shopcart is 0 * /
+  lề :  25 px  0  0  100 px ; / * cách lề thông tin-giỏ hàng với shopcart * /
+  text-align : center;
+  màu :  # f00 ; / * canh giữa sửa chữa trong div info-cart * /
+}
+# header_phone {
+  chiều rộng :  150 px ;
+  chiều cao :  30 px ;
+  / * border: 1px solid # 000; * /
+  float : trái; / * 2 div header_phone, header_search trên 1 hàng * /
+  margin-top :  28 px ;
+  background :  url (images / call.png) không lặp lại; / * create da nền & k để lặp lại hình * /
+  padding-left :  30 px ; / * số điện thoại cách lề trái 30px * /
+  kích thước phông chữ :  14 px ;
+  màu :  # 00f ;
+  chiều cao dòng :  30 px ; / * Canh giữa chiều cao * /
+}
+# header_search {
+  chiều rộng :  216 px ;
+  chiều cao :  30 px ;
+  / * border: 1px solid # 000; * /
+  float : trái; / * 2 div header_phone, header_search trên 1 hàng * /
+  margin-top :  28 px ;
+  nền :  # f7f7f7 ;
+  chức vụ : thân nhân; / * cố định để sửa đổi tìm kiếm phụ * /
+}
+# txtsearch {
+  chiều rộng :  180 px ;
+  chiều cao :  29 px ;
+  viền :  0 ; / * remove frame search * /
+  nền :  # f7f7f7 ;
+}
+# btnsearch {
+  chiều rộng :  34 px ;
+  chiều cao :  30 px ;
+  / * is on div header_search way top and right 0px * /
+  vị trí : tuyệt đối;
+  chỉ số z :  99 ;
+  đầu trang :  0 ;
+  đúng :  0 ;
+  viền :  0 ; / * mất nút viền * /
+  background :  url (images / toolbar_find.png) không lặp lại;
+  con trỏ : con trỏ; / * rê chuột vào bàn tay xuất hiện * /
+}
+/ * PHẦN MENU ============================ * /
+# menu {
+  chiều rộng :  1000 px ;
+  lề :  15 px tự động;
+  chiều cao :  42 px ;
+  / * border: 1px solid # 000000; * /
+  nền :  rgb ( 238 ,  75 ,  75 );
+}
+# menu  ul  li {
+  float : trái; / * các li nằm trên 1 hàng * /
+  border-right :  1 px chấm # fff ; / * Tạo đường ngăn cách giữa các li * /
+  chiều cao :  42 px ;
+}
+# menu  ul {
+  list-style-type : none; / * create list not mark * /
+}
+# menu  ul  li  a {
+  / * khoảng cách từ nội dung (chữ) đến lề trái & phải của mỗi li 25px * /
+  đệm :  0  25 px  0  25 px ;
+  màu :  # fff ;
+  nền :  rgb ( 238 ,  75 ,  75 );
+  font-weight : bold;
+  chiều cao dòng :  42 px ; / * content canh between height * /
+  display : inline-block; / * create a ngang khối * /
+}
+# menu  img {
+  float : trái;
+  đệm :  5 px  10 px  0  10 px ;
+}
+# menu  ul  li  a : hover {
+  nền :  # 999 ;
+  màu :  # 00c ;
+}
+/ * PHẦN CHÍNH ============================ * /
+# chính {
+  chiều rộng :  1000 px ;
+  lề :  15 px tự động;
+  chiều cao :  800 px ;
+  / * border: 1px solid # 000000; * /
+}
+# main_left {
+  chiều rộng :  230 px ;
+  chiều cao :  750 px ;
+  float : trái;
+  / * border: 1px solid # 000; * /
+}
+
+# menu_left {
+  chiều rộng :  200 px ;
+  / * chiều cao: 300px; * /
+  viền :  1 px solid # 000 ;
+  lề :  10 px  0  0  14 px ; / * way on 10, left 14 * /
+  viền :  1 px solid # cccccc ;
+  bán kính đường viền :  6 px ; / * bo tròn góc 1 độ 6px * /
+}
+# menu_left  ul {
+  list-style-type : none;
+}
+# menu_left  >  ul {
+  / * marker ">" chỉ ảnh hưởng lần đầu tiên, k ảnh hưởng thứ 2 * /
+  đệm :  10 px  20 px  10 px  20 px ;
+}
+# menu_left  li {
+  chiều cao dòng :  25 px ;
+}
+# menu_left  >  ul  >  li {
+  border-bottom :  1 px solid # 999 ;
+}
+. menu con  li {
+  padding-left :  30 px ;
+}
+. menu con  li {
+  padding-left :  30 px ;
+  background :  url (images / arrow.png) không lặp lại 15 px  10 px ; / * create daemon and k repeat * /
+}
+# menu_left  a {
+  màu :  # 00f ; / * màu xanh * /
+}
+# menu_left  a : di chuột qua {
+  màu :  # f1004c ; / * màu đỏ * /
+  con trỏ : con trỏ; / * hình bàn tay * /
+}
+/ * 6.2. CHÍNH QUYỀN ================================================== == * /
+ul {
+  list-style-type : none; / * bỏ dấu chấm tròn biểu tượng danh sách đầu * /
+}
+một {
+  / * all under the tag a đều được bỏ đi trong web này * /
+  văn bản-trang trí : không có;
+}
+# main_right {
+  chiều rộng :  749 px ;
+  / * chiều cao: 750px; * /
+  float : trái;
+  / * border: 1px solid # 000; * /
+  viền trái :  1 px chấm # 333 ;
+  lề trái :  20 px ;
+}
+# sản phẩm {
+  lề trái :  17 px ; / * div products cách div main-right 17px * /
+}
+# sản phẩm  ul  li {
+  chiều rộng :  230 px ;
+  chiều cao :  340 px ;
+  / * border: 1px solid # 000; * /
+  float : trái;
+  lề phải :  7 px ;
+}
+. nội dung {
+  chiều rộng :  210 px ;
+  chiều cao :  320 px ;
+  / * border: 1px solid # 000; * /
+  lề :  9 px  10 px  9 px  10 px ;
+}
+. tiêu đề {
+  margin-top :  6 px ;
+  text-align : center;
+  màu :  # f09 ;
+}
+. giá cả {
+  margin-top :  3 px ;
+  text-align : center;
+  kích thước phông chữ :  12 px ;
+  màu :  # 999999 ;
+}
+# sản phẩm  ul  li : hover {
+  nền :  # ccc ;
+  hộp bóng :  0  0  5 px  # 2c2c30 ; / * đổ bóng * /
+}
